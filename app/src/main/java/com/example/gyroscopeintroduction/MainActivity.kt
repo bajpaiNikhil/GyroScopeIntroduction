@@ -14,8 +14,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val viewModel:MainViewModel by viewModels()
-        val isDark = viewModel.isDark
-        Log.d("MainActivity" , "$isDark")
+        //val isDark = viewModel.isDark
+        //Log.d("MainActivity" , "$isDark")
 
     }
+
+//    override fun onDestroy() {
+//        super.onDestroy()
+//        val viewModel:MainViewModel by viewModels()
+//        viewModel.removeSensor()
+//    }
 }

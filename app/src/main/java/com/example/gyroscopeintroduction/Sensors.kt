@@ -12,11 +12,13 @@ import android.hardware.Sensor
 //    sensorType = Sensor.TYPE_LIGHT
 //)
 
-class LightSensor(
+
+class OrientationSensor(
     context: Context
 ) : AndroidSensor(
     context = context ,
     sensorFeature = PackageManager.FEATURE_SENSOR_GYROSCOPE  ,
-    //sensorType = Sensor.TYPE_ROTATION_VECTOR
+//    sensorType = Sensor.TYPE_GYROSCOPE
+//    sensorType = Sensor.TYPE_ROTATION_VECTOR
     sensorType =  Sensor.TYPE_ORIENTATION
 )

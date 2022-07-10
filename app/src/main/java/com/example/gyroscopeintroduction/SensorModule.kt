@@ -14,6 +14,6 @@ object SensorModule {
     @Provides
     @Singleton
     fun provideLightSensor(app: Application) : MeasurableSensor{
-        return LightSensor(app)
+        return OrientationSensor(app)
     }
 }
